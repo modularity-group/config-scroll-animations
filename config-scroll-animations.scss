@@ -1,0 +1,29 @@
+.is-style-animate-into-view {
+  --animation-height: -40px;
+  animation-duration: 625ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+.is-style-animate-into-view.is-not-in-view {
+  bottom: var(--animation-height);
+  opacity: 0;
+}
+
+.is-style-animate-into-view.is-in-view {
+  animation-name: animateIntoView;
+  bottom: 0;
+  opacity: 1;
+}
+
+@keyframes animateIntoView {
+  0% {
+    opacity: 0;
+    bottom: var(--animation-height);
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
