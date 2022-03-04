@@ -6,7 +6,7 @@ Enables auto-scrolling to anchors and into-view-animation for some blocks.
 
 ---
 
-Version: 0.1.0
+Version: 0.1.1
 
 Author: Ben @ https://modularity.group
 
@@ -21,4 +21,6 @@ Activate the into-view-animation with the block style `Animated` which is availa
 
 ---
 
-1.0.0 | initial release
+0.1.1 | fix js error in admin editor
+
+0.1.0 | initial release
